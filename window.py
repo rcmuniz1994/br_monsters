@@ -17,9 +17,9 @@ def run_game():
     pygame.display.set_caption("BR Monsters")
     ship = Ship(screen)
 
-    while True:
-        
-        gf.check_events()
+    while True:   
+        gf.check_events(ship)
+        ship.update()
         gf.update_screen(ai_settings, screen, ship)
 
 run_game()
