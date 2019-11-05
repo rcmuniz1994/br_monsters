@@ -42,4 +42,4 @@ class Bullet(Sprite):
         """
         Desenha a bala na tela
         """
-        pygame.draw.rect(self.screen, self.color, )
+        pygame.draw.rect(self.screen, self.color, self.rect)
